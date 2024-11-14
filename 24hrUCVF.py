@@ -99,7 +99,7 @@ def count_hours_in_cloud(file_path, transit_time_limit, matchingUTC):
     return total_hours_CBL_LA
 
 # Read transit time limit data
-transit_time_file = '/Users/nattamonmaneenoi/Desktop/finalized data/EPCAPE - LA-SD TT CBL - QC.csv'
+transit_time_file = '/Users/nattamonmaneenoi/Desktop/finalized data/TimeUTC_24hr-limit.csv'
 transit_time_data = pd.read_csv(transit_time_file)
 transit_time_limit = transit_time_data['24 hr limit'].values
 matchingUTC = transit_time_data['Start Time'].values
